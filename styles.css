@@ -38,7 +38,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 50%;
+  width: 30vw;
 }
 
 .light-title,
@@ -107,4 +107,35 @@ body {
 }
 .attribution a {
   color: var(--blue);
+}
+
+@media (max-width: 375px) {
+  .container {
+    margin-top: 10vw;
+  }
+
+  .intro {
+    width: 80vw;
+  }
+
+  .light-title,
+  .heavy-title {
+    font-size: 1.5em;
+  }
+
+  .card-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 100vw;
+  }
+
+  .card img {
+    max-width: 20vw;
+    min-width: 15vw;
+  }
 }
